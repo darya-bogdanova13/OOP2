@@ -1,5 +1,15 @@
+import Service.ServiceStation;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ServiceStation serviceStation = new ServiceStation();
+        Truck truck = new Truck("Isuzu", 6);
+        serviceStation.check(truck);
+
+        Car car = new Car("Toyota Corolla Runx", 4);
+        serviceStation.check(car);
+
+        Bicycle bicycle = new Bicycle("Stels", 2);
+        serviceStation.check(bicycle);
     }
 }
